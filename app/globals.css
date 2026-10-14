@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Custom styling for react-international-phone to match premium theme */
+.react-international-phone-input-container {
+  border: none !important;
+  background-color: transparent !important;
+}
+
+.react-international-phone-input {
+  border: none !important;
+  background-color: transparent !important;
+  outline: none !important;
+  box-shadow: none !important;
+  font-family: inherit !important;
+  color: #1D2E54 !important;
+  font-size: 1rem !important;
+  padding-left: 0.5rem !important;
+}
+
+.react-international-phone-country-selector-button {
+  border: none !important;
+  background-color: transparent !important;
+  padding: 0 !important;
+}
+
+.react-international-phone-country-selector-button:hover {
+  background-color: transparent !important;
+}
+
+.react-international-phone-country-selector-dropdown {
+  background-color: #ffffff !important;
+  border: 1px solid #f3f4f6 !important;
+  border-radius: 1rem !important;
+  box-shadow: 0 10px 25px -5px rgba(196, 161, 255, 0.2), 0 8px 10px -6px rgba(196, 161, 255, 0.2) !important;
+  padding: 0.5rem !important;
+  max-height: 250px !important;
+}
+
+.react-international-phone-country-selector-dropdown__list-item {
+  border-radius: 0.5rem !important;
+  color: #1D2E54 !important;
+  font-size: 0.875rem !important;
+}
+
+.react-international-phone-country-selector-dropdown__list-item:hover {
+  background-color: #F5EEFF !important;
+}
+
